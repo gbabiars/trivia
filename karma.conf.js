@@ -8,15 +8,16 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
-  QUNIT,
-  QUNIT_ADAPTER,
-  'client/test/**/*.js',
+    QUNIT,
+    QUNIT_ADAPTER,
 
     { pattern: 'public/components/jquery/jquery.js', watch: false },
     { pattern: 'public/components/handlebars/handlebars.runtime.js', watch: false },
     { pattern: 'public/components/ember/ember.js', watch: false },
     { pattern: 'public/components/ember-data/ember-data.js', watch: false },
-    { pattern: 'public/js/trivia.js' }
+    { pattern: 'public/js/trivia.js' },
+
+    'client/test/**/*.js',
 ];
 
 

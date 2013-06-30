@@ -4,6 +4,6 @@ helpers = helpers || Ember.Handlebars.helpers; data = data || {};
   
 
 
-  data.buffer.push("<h1>Hello Again!!</h1>");
+  data.buffer.push("<h1>Hello Again</h1>");
   
 });

@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    module('trivia');
+    module('Trivia');
 
     test('namespace should exist', function() {
         ok(Trivia);

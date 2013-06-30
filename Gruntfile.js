@@ -21,7 +21,8 @@ module.exports = function(grunt) {
         jshint: {
             client: ['client/js/**/*.js'],
             options: {
-                jshintrc: '.jshintrc'
+                jshintrc: '.jshintrc',
+                ignores: ['client/js/compiled-templates.js']
             }
         },
 
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    'public/js/compiled-templates.js': 'client/templates/**/*.hbs'
+                    'client/js/compiled-templates.js': 'client/templates/**/*.hbs'
                 }
             }
         },
@@ -48,10 +49,13 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'client/js/trivia.js',
+                    'client/js/app.js',
+                    'client/js/store.js',
                     'client/js/models/*.js',
+                    'client/js/routes/*.js',
                     'client/js/controllers/*.js',
-                    'client/js/views/*.js'
+                    'client/js/views/*.js',
+                    'client/js/compiled-templates.js'
                 ],
                 dest: 'public/js/trivia.js'
             }
