@@ -11,6 +11,10 @@ module.exports = function(grunt) {
             emberTemplates: {
                 files: ['client/templates/**/*.hbs'],
                 tasks: ['emberTemplates']
+            },
+            sass: {
+                files: ['client/css/*.sass'],
+                tasks: ['sass']
             }
         },
 

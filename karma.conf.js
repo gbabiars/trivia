@@ -12,9 +12,10 @@ files = [
   QUNIT_ADAPTER,
   'client/test/**/*.js',
 
-    { pattern: 'public/components/jquery/jquery.js' },
-    { pattern: 'public/components/handlebars/handlebars.runtime.js' },
-    { pattern: 'public/components/ember/ember.js' },
+    { pattern: 'public/components/jquery/jquery.js', watch: false },
+    { pattern: 'public/components/handlebars/handlebars.runtime.js', watch: false },
+    { pattern: 'public/components/ember/ember.js', watch: false },
+    { pattern: 'public/components/ember-data/ember-data.js', watch: false },
     { pattern: 'public/js/trivia.js' }
 ];
 

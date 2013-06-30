@@ -1,0 +1,10 @@
+{
+  "name": "trivia",
+  "version": "0.0.0",
+  "devDependencies": {
+    "modernizr": "~2.6.2",
+    "ember": "~1.0.0-rc.6",
+    "handlebars": "1.0.0-rc.4",
+    "jquery": "~2.0.2"
+  }
+}
